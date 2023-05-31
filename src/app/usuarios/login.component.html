@@ -1,0 +1,24 @@
+  <!-- Custom styles for this template
+  <link href="signin.css" rel="stylesheet"> -->
+
+  <div class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="./assets/img/angular-red.png" alt="App Angular & Spring Boot">
+      <h1 class="h3 mb-3 font-weight-normal">{{titulo}}</h1>
+      
+      <label for="username" class="sr-only">Username</label>
+      <input [(ngModel)] = "usuario.username" type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+      <br>
+      <label for="password" class="sr-only">Password</label>
+      <input [(ngModel)] = "usuario.password" type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+      
+      <!-- <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div> -->
+      
+      <button (click) = 'login()' type="submit" class="btn btn-lg btn-primary btn-block">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+    </form>
+</div>
